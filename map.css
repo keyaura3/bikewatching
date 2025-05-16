@@ -1,17 +1,64 @@
-html,
-body {
+html, body {
   margin: 0;
-  padding: 5;
+  padding: 0;
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
 }
 
 #map {
-  width: 100%; /* Adjust width to your desired size */
-  height: 100%; /* Adjust height to your desired size */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for effect */
-  border-radius: 8px; /* Optional: rounded corners */
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+circle {
+  fill-opacity: 0.6;
+  stroke: white;
+  stroke-width: 1;
+  pointer-events: auto;
+}
+
+header {
+  display: flex;
+  gap: 1em;
+  align-items: baseline;
+}
+
+time, em {
+  display: block;
+}
+
+em {
+  color: gray;
+  font-style: italic;
+}
+
+#legend {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 1em;
+  font-size: 0.9em;
+  font-family: sans-serif;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin-right: 0.4em;
+  vertical-align: middle;
+}
+
+.more-departures {
+  background-color: steelblue;
+}
+
+.balanced {
+  background-color: #999;
+}
+
+.more-arrivals {
+  background-color: orange;
 }
